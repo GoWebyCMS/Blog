@@ -1,0 +1,5 @@
+Django==1.9
+django-taggit==0.17.1
+Pillow
+django-haystack==2.4.0
+pysolr==3.3.2
