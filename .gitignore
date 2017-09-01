@@ -25,3 +25,7 @@ testproject/db.sqlite3
 .project
 devblog
 manage.py
+venv
+blog/__pycache__/
+solr/
+db.sqlite3

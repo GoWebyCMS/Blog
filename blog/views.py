@@ -74,7 +74,6 @@ def post_detail(request, year, month, day, post):
                                                      'similar_posts': similar_posts})
 
 
-
 def post_share(request, post_id):
     # Retrieve post by id
     post = get_object_or_404(Post, id=post_id, status='published')
@@ -109,7 +108,9 @@ def post_search(request):
             # count total results
             total_results = results.count()
 
-    return render(request, 'blog/post/search.html', {'form': form,
+        return render(request, 'blog/post/search.html', {'form': form,
                                                      'cd': cd,
                                                      'results': results,
                                                      'total_results': total_results})
+    else:
+        return render(request, 'blog/post/search.html', {'form': form,})
